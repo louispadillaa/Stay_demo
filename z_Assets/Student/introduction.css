@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #3e2276;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.container-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.header-intro{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.header-intro h1{
+    font-size: 5rem;
+    margin-top: -20px;
+}
+
+.content-intro{
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    text-align: center;
+    align-items: center;
+}
+
+.img-intro{
+    display: flex;
+    justify-content: center;
+}
+.img-intro img{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #3e2276;
+    font-weight: 500;
+    background-color: #fff;
+    width: 150px;
+    border-radius: 30px 15px 30px 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin-top: 50px;
+
+}
+
+a:hover{
+    background-color: #936fdb;
+    color:#fff;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); /* Deslizar un poco hacia arriba */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Volver a su posición original */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Animación global aplicada a las secciones principales */
+.container-intro {
+    animation: fadeInUp 1.5s ease-in-out; /* Deslizamiento y desvanecimiento suave */
+    opacity: 0; /* Comenzar invisible */
+    animation-fill-mode: forwards; /* Mantener el estado final de la animación */
+}
+
+/* Para aplicar un retraso suave a cada sección */
+
+.container-intro {
+    animation-delay: 0.2s;
+}

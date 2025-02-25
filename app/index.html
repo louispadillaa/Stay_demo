@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/z_Images/circle-dark-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/z_Assets/App/index.css">
+    <title>Stay</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="/App/index.html"> <img src="/z_Images/dark-logo.png" alt=""> </a> 
+                <h3>Stay</h3>
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <div class="links" id="menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#descubrir">Descubrir</a>
+                    <a href="#relevante">Relevante</a>
+                    <a href="about.html">Sobre</a>
+                    <a href="#contacto">Contacto</a>
+                    <a class="log" href="/App/login.html">Iniciar en Stay</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="content">
+        <div id="inicio" class="container">
+            <div class="left"> 
+                <p class="statement"> 😱 La deserción ya no será un problema</p>
+                <h1>Mejora la permanencia estudiantil en tu Universidad</h1>
+                <p>Brindale a tu entorno educativo un sistema automatizado de<span class="span-text">alertas tempranas</span>para disminuir la deserción</p>
+
+                <div class="log-container">
+                    <a href="/App/login.html">Iniciar en Stay</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="/z_Images/background-imagen.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+
+    <!-- SECCION 1-->
+    <section id="descubrir" class="section1">
+
+        <div class="section1-left"> 
+            <img src="/z_Images/background-imagen.jpg" alt="">
+        </div>
+    
+        <div class="section1-right">
+            <h2>Potencia tu analisis y visualización de datos con un dashboard dinámico</h2>
+            <p>Precisa las razones de las generaciones de las alertas de tus estudiantes, lo que permitirá una mejor intervención en tus procesos de permanencia estudiantil.</p>
+        </div>
+       
+    </section>
+
+     <!-- SECCION 2-->
+    <section  class="section2">
+        <div class="box">
+            <h4>Análisis y visualización de datos</h4>
+            <p> Stay proporciona la visualización de datos de las alertas generadas por los estudiantes, permiento un mejor análisis para entender el compotarmiento de la población estudiantil.</p>
+        </div>
+
+        <div class="box">
+            <h4>Control de seguimiento </h4>
+            <p>Stay permite gestionar el seguimiento de los estudiantes dentro de un plan de permanencia estudiantil, para poder intervenir de la mejor forma.</p>
+        </div>
+
+        <div class="box">
+            <h4>Alertas tempranas</h4>
+            <p>Stay permite generar alertas tempranas a través de una encuesta atractiva con la cual tus estudiantes pueden interactuar.</p>
+        </div>
+    </section>
+
+     <!-- SECCION 3-->
+
+    <section class="section3">
+            <h1> Una encuesta<span class="span">dinamica y divertida </span> para tus estudiantes donde podrás 
+                gestionar las preguntas</h1>
+            <img src="/z_Images/magic.gif" alt="">
+    </section>
+
+
+
+     <!-- SECCION 4  -->
+    <section class="section4">
+            <img src="/z_Images/chart.gif" alt="">
+            <h1>Stay te aporta una visualización interactiva de los datos que recibe de los estudiantes. ¡Es hora de empezar con Stay! </h1>
+      </section>
+
+
+    <!-- SECCION 5-->
+    
+    <section id="relevante" class="section5">
+        <div class="left">
+            <h3>Tus estudiantes podrán interacturar con Robby, nuestro chatbot. <br> <br>
+                Robby es un chatbot interactivo, podrán comunicarse con él para resolver 
+                cualquier pregunta. Descubre todo lo que robby puede aportar en el apoyo a tus estudiantes.
+            </h3>
+    
+            <p>Robby:</p>
+            <p id="dynamic-text"> </p>
+        </div>
+            <div class="right">
+                <img src="/z_Images/bot.gif" alt="">
+            </div>
+    </section>
+
+
+     <!-- SECCION 6-->
+    <section class="section6">
+        <img src="/z_Images/question.gif" alt="">
+        <h1> Podrás <span class="span">buscar y filtrar</span>información de tus estudiantes para tener información particular de cada uno.</h1>
+    </section>
+
+
+     <!-- SECCION 7-->
+
+    <section class="section7">
+        <h1>Con stay tus estudiantes tienen <span class="span">la mejor oportundiad de todas</span>  </h1>
+        <h3>¿Qué esperas para ser parte?</h3>
+        <a href="/App/login.html">Iniciar en Stay</a>
+    </section>
+
+<footer>
+    <div id="contacto" class="contacto">
+        <div class="info">
+            <img src="/z_Images/white-logo.png" alt="">
+            <p>© 2024 | Stay</p> 
+        </div>
+    </div>
+</footer>
+
+<script src="/App/Js/index.js"></script>
+<script >
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+</script>
+</body>
+</html>

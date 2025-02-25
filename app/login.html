@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay </title>
+  <link rel="shortcut icon" href="/z_Images/circle-dark-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/z_Assets/App/login.css">
+  <!-- Ionicons for Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+
+<header> 
+
+  <nav>
+    <div class="logo-logo">
+       <a href="/App/index.html"> <img src="/z_Images/dark-logo.png" alt=""> </a> 
+        <h3>Stay</h3>
+    </div>
+
+</nav>
+  
+</header>
+
+<main>
+  
+  <div class="box">
+    <div class="inner-box">
+      <div class="forms-wrap">
+
+        <!-- Login Form -->
+        <form id="login-form"  method="post" autocomplete="off" class="sign-in-form">
+          <div class="logo">
+              <img src="/z_Images/dark-logo.png" alt="easyclass" />
+              <h4>Stay</h4>
+          </div>
+      
+          <div class="heading">
+              <h2>Iniciar sesión</h2>
+              <h6>¿Aún no estás registrado?</h6>
+              <a href="#" class="toggle">Registrarse</a>
+          </div>
+      
+          <div class="actual-form">
+              <div class="input-wrap">
+                  <input name="username" id="usernamelogin" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="usernamelogin">Usuario</label>
+              </div>
+      
+              <div class="input-wrap">
+                  <input name="password" id="passwordlogin" type="password" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="passwordlogin">Contraseña</label>
+              </div>
+      
+              <input type="submit" value="Iniciar sesión" class="sign-btn" />
+              
+              <!-- 
+              <p class="text">
+                  ¿Olvidaste tu contraseña?
+                  <a href="#">Obtener ayuda</a>
+              </p>
+            -->
+          </div>
+      </form>
+
+        <!-- Signup Form -->
+        <form id="registerForm" method="post" autocomplete="off" class="sign-up-form">
+          <div class="logo">
+            <img src="/z_Images/dark-logo.png" alt="easyclass" />
+            <h4>Stay</h4>
+          </div>
+
+          <div class="heading">
+            <h2>Crear cuenta</h2>
+            <h6>¿Ya tienes una cuenta?</h6>
+            <a href="#" class="toggle">Iniciar Sesión</a>
+          </div>
+
+          <div class="actual-form">
+
+            <div class="boxes-form">
+              <div class="left">
+
+                <div class="input-wrap">
+                  <input id="firstname1" name="firstname" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="firstname1">Nombres</label>
+                </div>
+    
+                <div class="input-wrap">
+                  <input id="lastname1" name="lastname" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="lastname1">Apellidos</label>
+                </div>
+  
+                <div class="input-wrap">
+                  <input id="username1" name="username" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="username1">Usuario</label>
+                </div>
+  
+                <div class="input-wrap">
+                  <input id="password1" name="password" type="password" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="password1">Contraseña</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input id="password2" name="password" type="password" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="password2">Confir. Contraseña</label>
+                </div>
+    
+              </div>
+  
+              <div class="right">
+  
+                <div class="input-wrap">
+                  <input id="career" name="career" type="text" class="input-field" autocomplete="off" required />
+                  <label for="career">Carrera</label>
+                </div>
+    
+                <div class="input-wrap">
+                  <input id="age" name="age" type="number"  class="input-field" autocomplete="off" required />
+                  <label for="age">Edad</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input id="phone" name="phone" type="tel" class="input-field" autocomplete="off" required />
+                  <label for="phone">Teléfono</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input id="gender" name="gender" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="gender">Género</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input id="semester" name="semester" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label for="semester">Semestre</label>
+                </div>
+  
+            </div>
+           
+
+            </div>
+
+          
+           
+
+
+            
+
+          
+
+            <input id="submit" type="submit" value="Registrarse" class="sign-btn" />
+
+          </div>
+
+
+        </form>
+      </div>
+
+      <div class="carousel">
+        <!-- Carousel content here -->
+        <div class="images-wrapper">
+          <img src="/z_Images/student1.gif" class="image img-1 show" alt="" />
+          <img src="/z_Images/student2.gif" class="image img-2" alt="" />
+          <img src="/z_Images/student4.gif" class="image img-3" alt="" />
+        </div>
+
+        <div class="text-slider">
+          <div class="text-wrap">
+            <div class="text-group">
+              <h2>Bienvenido, un gusto tenerte por aquí</h2>
+              <h2>Trasnformando la educación con visión preventiva</h2>
+              <h2>Somos Stay, somos prenvención</h2>
+            </div>
+          </div>
+
+          <div class="bullets">
+            <span class="active" data-value=""></span>
+            <span data-value=""></span>
+            <span data-value=""></span>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="/App/Js/login.js"></script>
+<script src="/App/Js/login-auth.js"></script>
+
+</body>
+</html>

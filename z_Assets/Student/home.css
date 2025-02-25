@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary-color: #7a57bf;
+    --secondary-color: #2b1d50;
+    --third-color: #1d0d31;
+    --background-color: #150227;
+    --text-color:#f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #0a111e;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    gap: 20px;
+}
+
+
+.sidebar{
+    flex: 1;
+    padding: 0 15px;
+    background-color: #0a111e;
+
+}
+
+.sidebar .logo{
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    font-size: 1.rem;
+}
+
+.logo h1{
+    color:#fff;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr{
+    border: solid 1px #7b7b7b;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.link{
+    margin-bottom: 20px;
+
+}
+
+.select{
+    display: flex;
+    background-color: #6537b9;
+    padding: 10px 10px;
+    width: 200px;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: start;
+}
+
+
+.unselect{
+    background-color: transparent;
+    padding: 10px 10px;
+    width: 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+.unselect:hover{
+    background-color: rgba(160, 160, 160, 0.1);
+    border-radius: 10px;
+}
+
+.icon{
+    
+    width: 25px;
+    height: 25px;
+}
+
+.link a{
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-links a{
+    font-weight: 500;
+    font-size:17px;
+    text-decoration: none;
+}
+
+.main{
+    padding: 20px;
+    flex: 4;
+}
+
+
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.start h2:hover {
+    transform: scale(1.15); /* Aumenta el tamaño */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de vibración */
+.start h2:hover {
+    animation: vibrate 0.3s linear infinite; /* Vibración constante */
+}
+
+@keyframes bounceEffect2 {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.1); /* Rebote hacia arriba */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Regresa a la posición original */
+    }
+}
+.start h2:hover {
+    transform: translateY(-10px) scale(1.1) rotate(10deg); /* Salta, se agranda un poco y rota */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.start h2 {
+    border: 2px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.start h2:hover {
+    box-shadow: 0 0 15px rgba(163, 124, 236, 0.8); /* Sombra con color específico */
+    transition: box-shadow 0.4s ease;
+}
+
+/* Efecto de opacidad gradual */
+.start h2:hover {
+    opacity: 0.8; /* Hace que la encuesta se vuelva ligeramente translúcida */
+    transition: opacity 10s ease;
+}
+
+
+/* Efecto de resplandor */
+.start h2:hover {
+    box-shadow: 0 0 30px 20px rgba(156, 118, 227, 0.7); /* Resplandor alrededor */
+    transform: scale(1.1); /* Agranda ligeramente */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.start h2:hover {
+    transform: scale(1.2); /* Hace que la encuesta se agrande */
+    transition: transform 0.2s ease-in-out;
+}
+
+.start h2:hover {
+    transform: translateY(-10px) scale(1.1) rotate(5deg); /* Salta un poco, se agranda y rota */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    animation: bounceEffect2 0.6s ease-out forwards; /* Animación de rebote */
+}
+
+
+.start h2{
+    background-color: #6537b9;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.start a:hover{
+    background-color: #f8a571;
+}
+.start a{
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+.content-aside{
+    flex: 1.5;
+    padding: 20px;
+    height: 100vh;
+    padding: 50px;
+    padding: 20px 50px;
+}
+
+
+.info-general .text-info{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 0 5px 5px 0px;
+}
+
+
+.section-survey {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* Contenedor de las encuestas ajustado para columnas */
+.survey-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, fr); /* 4 columnas */
+    gap: 50px; /* Aumentamos el espacio entre las encuestas */
+    justify-items: center;
+    align-items: center;
+}
+
+/* Estilo base de las encuestas */
+.survey {
+    background-color: #6537b9;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    margin: 0 15px 20px 15px;
+    overflow: hidden; /* Asegura que el SVG se mantenga dentro del círculo */
+}
+
+.survey svg {
+    width: 70%; /* Ajusta el tamaño del SVG dentro del contenedor */
+    height: 70%; /* Asegura que el SVG tenga la altura proporcional al contenedor */
+    object-fit: contain; /* Mantiene la proporción del SVG sin recortarlo */
+}
+
+
+/* Animación de rebote */
+@keyframes bounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.1); /* Rebote hacia arriba */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Regresa a la posición original */
+    }
+}
+
+/* Efecto de hover: las encuestas se mueven ligeramente y tienen una sombra */
+.survey:hover {
+    transform: translateY(-10px) scale(1.1) rotate(10deg); /* Salta, se agranda un poco y rota */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo de la encuesta cuando se hace clic */
+.survey:active {
+    transform: translateY(2px) scale(1); /* Efecto al presionar */
+}
+
+/* Añadir un borde y sombra sutil para mejorar el aspecto */
+.survey {
+    border: 2px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de rebote cuando se pasa el cursor */
+.survey:hover {
+    transform: translateY(-10px) scale(1.1) rotate(5deg); /* Salta un poco, se agranda y rota */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    animation: bounceEffect 0.6s ease-out forwards; /* Animación de rebote */
+}
+
+/* Animación de rebote */
+@keyframes bounceEffect {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-15px) scale(1.1); /* Rebote hacia arriba */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Regresa a la posición original */
+    }
+}
+
+/* Efecto de crecimiento suave con sombra */
+.survey:hover {
+    transform: scale(1.15); /* Aumenta el tamaño */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    background-color: #f8a571; /* Cambio de color */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de vibración */
+.survey:hover {
+    animation: vibrate 0.3s linear infinite; /* Vibración constante */
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+/* Efecto de pulsar (zoom) */
+.survey:hover {
+    transform: scale(1.2); /* Hace que la encuesta se agrande */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto de sombra y escala */
+.survey:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(98, 28, 173, 0.3);
+    transition: all 0.3s ease-out;
+}
+
+/* Efecto de enfoque radial (enfoque con sombra que se expande) */
+.survey:hover {
+    box-shadow: 0 0 15px rgba(163, 124, 236, 0.8); /* Sombra con color específico */
+    transition: box-shadow 0.4s ease;
+}
+
+/* Efecto de opacidad gradual */
+.survey:hover {
+    opacity: 0.8; /* Hace que la encuesta se vuelva ligeramente translúcida */
+    transition: opacity 10s ease;
+}
+
+/* Efecto de resplandor */
+.survey:hover {
+    box-shadow: 0 0 30px 20px rgba(156, 118, 227, 0.7); /* Resplandor alrededor */
+    transform: scale(1.1); /* Agranda ligeramente */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto de zoom y desaparición */
+.survey:hover {
+    transform: scale(1.25);
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto de sombra animada */
+.survey:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25); /* Sombra más profunda */
+    transform: scale(1.1);
+    animation: glowEffect 1s ease-out infinite alternate; /* Efecto de resplandor */
+}
+
+/* Animación de resplandor (con desplazamiento suave) */
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 8px 15px rgba(101, 55, 185, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 30px rgba(78, 40, 148, 0.8);
+    }
+    100% {
+        box-shadow: 0 8px 15px rgba(43, 21, 86, 0.4);
+    }
+}
+
+.figure{
+    background-color: #6537b9;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.figure svg{
+    width: 70%;
+    height: 70%;
+}
+.btn-survey {
+    cursor: pointer;
+}
+
+.container-info {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    gap:1px;
+    padding: 15px;
+}
+
+.infox{
+    border-radius: 15px;
+    border: solid 1px white;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: .9rem;
+
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.inline-content {
+    display: flex; /* Usamos flex aquí para alinear en fila */
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Espacio entre los elementos */
+}
+
+.image-info-survey {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+
+.first {
+    margin-top: 50px;
+}
+
+.open-survey{
+    background-color: none;
+    display: none;
+}
+.survey-card {
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.logout button{
+    display: flex;
+    border: none;
+    font-weight: 600;
+    color:#ffffff;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 10px;
+    font-size: .9em;
+    background: none;
+    border-radius: 20px;
+
+}
+
+.logout button:hover{
+    background-color: rgba(160, 160, 160, 0.1);
+    border-radius: 10px;
+    
+}
+
+
+.logout svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.content{
+    margin: 10px 5px;
+    padding: 0;
+}
+
+.content-table{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.section-search{
+    background-color:var(--primary-color);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.content-top{
+    margin-top: 20px;
+}
+
+.section-search input{
+    position: relative;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    color: #030913;
+}
+
+
+.table{
+    max-height: 400px;
+    overflow-y: auto; 
+    background-color: #111828;
+}
+
+table {
+    width: 100%;
+    table-layout: auto; /* Asegúrate de que la tabla ocupe todo el ancho */
+    border-collapse: collapse; /* Colapsa bordes de celdas */
+}
+thead th {
+    position: sticky; /* Mantiene el encabezado fijo al hacer scroll */
+    top: 0; /* Posición desde la parte superior */
+    background-color: var(--primary-color); /* Color de fondo para los encabezados */
+    z-index: 10; /* Asegúrate de que esté por encima del contenido */
+    padding: 5px 20px;
+    text-align: center; /* Centrar texto en th */
+    border-bottom: 1px solid #ede9e9;
+}
+th{
+    padding: 5px 20px;
+    text-align: left; 
+    background-color:#3a1474;
+    border-bottom: 1px solid #ede9e9;
+} 
+
+td{
+    text-align: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #8b8b8b;
+    font-size: .9em;
+}
+
+.question-panel{
+    text-align: left;
+    padding: 10px 5px;
+}
+
+tr{
+    background-color: #111828;
+    
+}
+
+#noResultsMessage{
+    display: none;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.link-bot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: solid 1px rgb(152, 152, 152);
+    height: 310px;
+    margin-bottom: -120px;
+}
+
+.link-bot h5{
+    font-size: .9rem;
+}
+
+.link-bot p{
+    font-size: .9rem;
+}
+.link-bot img{
+ width: 200px;
+ margin-top: -20px;
+ padding: 10px;
+ border-radius: 100%;
+}
+
+.link-bot a{
+    text-decoration: none;
+    background-color: #6537b9;
+    padding: 6px;
+    margin-top: -20px;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.link-bot a:hover{
+    background-color: #fff;
+    color: #6537b9;
+    
+}
+
+
+.info-user {
+    display: flex;
+    padding: 10px 10px;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: #6537b9;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    gap: 50px;
+    align-content: center;
+}
+
+.info-user svg{
+    width: 1.3rem;
+    height: 100%;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.info-user svg:hover{
+    color:#6537b9
+    
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/z_Assets/Student/survey.css">
+    <link rel="shortcut icon" href="/z_Images/circle-dark-logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+
+    <title>Stay</title>
+</head>
+<body>
+
+    <nav class="bar">
+        <a class="btn-back" href="/Student/home.html"> X</a>
+        <div class="line-bar">
+            <div id="progressBar" class="progress-bar"></div> <!-- Barra de progreso interna -->
+        </div>
+    </nav>
+
+    <main class="main">
+       
+        <h3>Responde las Preguntas</h3>
+
+        <div class="questions"> 
+            <img  src="" alt="">
+            <h2 id="question"> </h2>
+        </div>
+
+        <div id="btn" class="btns">
+            <button id="yes" class="btn yes"> Sí</button>
+            <button id="no" class="btn no"> No</button>
+        </div>
+
+        <div class="dynamic-content">
+            <div class="dynamic-text">
+                <h3 id="responseMessage"></h3>
+            </div>
+         </div>
+        
+         <div id="thankYouView" class="thank-you-view">
+            <img class="survey-photo" src="/z_Images/student4.gif" alt="">
+            <h2>¡Muy bien! Hiciste un buen trabajo</h2>
+            <button id="continueButton">Continuar</button>
+        </div>
+        
+    </main>
+
+    <script src="/Student/Js/survey.js"></script>
+
+  
+</body>
+
+</html>

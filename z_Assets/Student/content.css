@@ -1,0 +1,130 @@
+/* Reset de márgenes y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a111e;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden; /* Para evitar desplazamiento horizontal */
+    height: 100%; /* Aseguramos que el body ocupe toda la altura de la página */
+}
+
+.intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    background-color: #6537b9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 30px; 
+    z-index: 9;
+}
+
+.content img{
+    width: 200px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.progress {
+    
+    height: 100%;
+    background-color: #ac85f9;
+    border-radius: 30px; 
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+/* Contenido de los hábitos */
+.content {
+    padding: 50px 20px;
+    margin: 20px;
+    background-color: #6537b9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(100px); /* Se inicia desde abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    max-width: 800px;
+    margin-left: auto;
+    margin-top: 250px;
+    margin-bottom: -200px;
+    margin-right: auto;
+    position: relative; /* Cambiado a 'relative' para que se desplace con el scroll */
+    z-index: 1;
+    top: 50%; /* Inicialmente en el centro */
+    transform: translateY(200px); /* Se inicializa más abajo para no solaparse */
+}
+
+/* Animación para cuando el contenido es visible */
+.content.visible {
+    opacity: 1;
+    transform: translateY(0); /* Se mueve hacia el centro */
+}
+
+
+
+/* Para cuando el mensaje de bienvenida desaparece */
+.intro.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+}
+
+.end{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 100px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+}
+
+.end a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 6px;
+    margin-top: -20px;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #6537b9;
+    
+}
+
+.end a:hover{
+    background-color: #eb8a45;
+    color: #fff;
+    
+}

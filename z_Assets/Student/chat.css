@@ -1,0 +1,148 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 800px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #282828;
+    border-radius: 8px;
+    display: flex;
+
+    flex-direction: column;
+    
+}
+
+/* Contenedor de los mensajes */
+.messages {
+    flex: 1;
+    overflow-y: auto;  /* Habilita el desplazamiento */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Estilos para los mensajes del usuario */
+.user-message {
+    background-color: #939393;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 15px;
+    max-width: 75%;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Estilos para los mensajes del bot */
+.bot-message {
+
+    color: white;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 15px;
+    max-width: 75%;
+    align-self: flex-start;
+    text-align: left;
+    background-color: #1a1a1a;
+}
+
+/* Estilos para el input y botón */
+.form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+}
+
+.form button {
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container-sections{
+    gap: 20px;
+    height: 100vh;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los mensajes a la izquierda por defecto */
+    padding: 10px;
+    overflow-y: auto;
+    height: 400px; /* Ajusta la altura según lo necesites */
+}
+
+/* Estilo para los mensajes del usuario */
+.user-message {
+    background-color: #252525;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    max-width: 80%;
+    align-self: flex-end; /* Alinea los mensajes del usuario a la derecha */
+    text-align: right;
+}
+
+/* Estilo para los mensajes del bot */
+.bot-message {
+
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 80%;
+    align-self: flex-start; /* Alinea los mensajes del chatbot a la izquierda */
+    text-align: left;
+    position: relative;
+}
+
+.bot-message::after {
+    content: '|';
+    position: absolute;
+    right: 10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+/* Asegura que el input de texto se vea bien */
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bot{
+    background-color: #000;
+}
+
+.bot img{
+    margin-top: 5px;
+}
